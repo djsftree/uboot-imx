@@ -1,0 +1,17 @@
+if TARGET_IMX8MP_MXA200
+
+config SYS_BOARD
+	default "mxa-200"
+
+config SYS_VENDOR
+	default "adlink"
+
+config SYS_CONFIG_NAME
+	default "mxa-200"
+
+config IMX_CONFIG
+	default "board/adlink/mxa-200/imximage-8mp-lpddr4.cfg"
+
+source "board/freescale/common/Kconfig"
+
+endif
