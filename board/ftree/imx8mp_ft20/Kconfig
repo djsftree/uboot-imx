@@ -1,0 +1,15 @@
+if TARGET_IMX8MP_FT20
+
+config SYS_BOARD
+	default "imx8mp_ft20"
+
+config SYS_VENDOR
+	default "ftree"
+
+config SYS_CONFIG_NAME
+	default "imx8mp_ft20"
+
+config IMX_CONFIG
+	default "board/ftree/imx8mp_ft20/imximage-8mp-lpddr4.cfg"
+
+endif

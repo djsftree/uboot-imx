@@ -1,0 +1,6 @@
+i.MX8MP FT20 BOARD
+M:	David Smith <djs@noip.org>
+S:	Maintained
+F:	board/ftree/imx8mp_ft20/
+F:	include/configs/imx8mp_ft20.h
+F:	configs/imx8mp_ft20_defconfig

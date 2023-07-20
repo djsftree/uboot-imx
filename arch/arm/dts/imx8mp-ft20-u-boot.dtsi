@@ -1,0 +1,45 @@
+// SPDX-License-Identifier: GPL-2.0+
+/*
+ * Copyright 2019 NXP
+ */
+
+#include "imx8mp-u-boot.dtsi"
+
+/ {
+	model = "iMX8MP FT20";
+	compatible = "ftree,imx8mp-ft20", "fsl,imx8mp";
+
+	wdt-reboot {
+		compatible = "wdt-reboot";
+		wdt = <&wdog1>;
+		u-boot,dm-spl;
+	};
+};
+
+&gpio1 {
+	u-boot,dm-spl;
+};
+
+&gpio2 {
+	u-boot,dm-spl;
+};
+
+&gpio3 {
+	u-boot,dm-spl;
+};
+
+&uart4 {
+	u-boot,dm-spl;
+};
+
+&i2c1 {
+	u-boot,dm-spl;
+};
+
+&i2c3 {
+	u-boot,dm-spl;
+};
+
+&pmic {
+	u-boot,dm-spl;
+};

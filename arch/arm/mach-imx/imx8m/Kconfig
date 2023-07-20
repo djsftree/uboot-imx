@@ -318,6 +318,13 @@ config TARGET_IMX8MP_EVK
 	select ARCH_MISC_INIT
 	select SPL_CRYPTO if SPL
 
+config TARGET_IMX8MP_FT20
+	bool "Support ft20 iMX8MP board"
+	select BINMAN
+	select IMX8MP
+	select SUPPORT_SPL
+	select IMX8M_LPDDR4
+
 config TARGET_IMX8MP_VENICE
 	bool "Support Gateworks Venice iMX8M Plus module"
 	select BINMAN

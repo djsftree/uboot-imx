@@ -1,0 +1,71 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * ftree ft20 minimal u-boot
+ */
+
+/dts-v1/;
+
+#include "imx8mp.dtsi"
+
+/ {
+	model = "iMX8MP FT20";
+	compatible = "ftree,imx8mp-ft20", "fsl,imx8mp";
+};
+
+&gpio1 {
+	u-boot,dm-spl;
+};
+
+&gpio2 {
+	u-boot,dm-spl;
+};
+
+&gpio3 {
+	u-boot,dm-spl;
+};
+
+&gpio4 {
+	u-boot,dm-spl;
+};
+
+&gpio5 {
+	u-boot,dm-spl;
+};
+
+&i2c1 {
+	u-boot,dm-spl;
+};
+
+&pinctrl_i2c1 {
+	u-boot,dm-spl;
+};
+
+&uart4 {
+	u-boot,dm-spl;
+};
+
+&uart4 { /* console */
+	u-boot,dm-spl;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_uart4>;
+	assigned-clocks = <&clk IMX8MP_CLK_UART4>;
+	assigned-clock-parents = <&clk IMX8MP_SYS_PLL1_80M>;
+};
+
+&usdhc2 {
+	u-boot,dm-spl;
+	assigned-clock-parents = <&clk IMX8MP_SYS_PLL1_400M>;
+	assigned-clock-rates = <400000000>;
+	assigned-clocks = <&clk IMX8MP_CLK_USDHC2>;
+	sd-uhs-ddr50;
+	sd-uhs-sdr104;
+};
+
+&pinctrl_wdog {
+	u-boot,dm-spl;
+};
+
+&wdog1 {
+	u-boot,dm-spl;
+
+};
